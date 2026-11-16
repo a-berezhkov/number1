@@ -37,9 +37,14 @@ form.addEventListener("submit", (e) => {
 //     "updatedAt": "2026-11-14T11:06:03.443Z",
 //     "createdAt": "2026-11-14T11:06:03.443Z"
 // }
+ 
 
 function drawCard(card) {
   const div = document.createElement("div");
+  div.dataset.id = card.id
+
+   
+  
 
   const divName = document.createElement("div");
   divName.innerText = card.name;
